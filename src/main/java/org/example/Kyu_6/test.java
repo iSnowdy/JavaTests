@@ -3,37 +3,23 @@ import java.util.*;
 
 
 public class test {
-    public static int countSmileys(List<String> arr) {
+    public static void main (String[] args) {
 
-        String[] eyes = {":", ";"};
-        String[] nose = {"-", "~", ""};
-        String[] mouth = {")", "D"};
+        String goodAmounts = "1 1 1 1 1 1";
+        String evilAmounts = "1 1 1 1 1 1 1";
 
-        int result = 0;
+        int[] goodForces = {1, 2, 3, 3, 4, 10};
+        int[] evilForces = {1, 2, 2, 2, 3, 5 ,10};
+        String result = "";
 
-        for (int i = 0; i < arr.size(); i++) {
-            String now = arr.get(i);
-            System.out.println(now);
-            if (arr.get(i).contains(eyes[0]) || arr.get(i).contains(eyes[1])) {
-                if (arr.get(i).contains(nose[0]) || arr.get(i).contains(nose[1]) || arr.get(i).contains(nose[2])) {
-                    if (arr.get(i).length() >= 4) {
-                        if (arr.get(i).charAt(1) == ')' || arr.get(i).charAt(1) == 'D') {
-                            result++;
-                        }
-                    }
-                    else {
-                        if (arr.get(i).charAt(arr.get(i).length() - 1) == ')' || arr.get(i).charAt(arr.get(i).length() - 1) == 'D') {
-                            result++;
-                        }
-                    }
+        System.out.println(goodAmounts.getClass());
+        System.out.println(goodAmounts.charAt(3));
 
-                }
-            }
+        String[] goodSplit = goodAmounts.split(" ");
+        String[] evilSplit = evilAmounts.split(" ");
+
+        System.out.println(goodSplit);
+
+
         }
-
-
-        System.out.println("My result is " + result);
-
-        return result;
-    }
 }
