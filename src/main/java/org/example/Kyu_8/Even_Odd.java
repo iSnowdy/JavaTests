@@ -1,9 +1,7 @@
 package org.example.Kyu_8;
 
 public class Even_Odd {
-    public static void main (String[] args ) {
-
-        int number = 6;
+    public static String evenOrOdd(int number) {
 
         String result;
 
@@ -11,5 +9,6 @@ public class Even_Odd {
 
         System.out.println(result);
 
+        return result;
     }
 }

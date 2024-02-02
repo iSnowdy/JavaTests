@@ -12,5 +12,7 @@ public class Nickname_Generator {
 
         System.out.println(result);
 
+        System.out.println("Hi");
+
     }
 }
