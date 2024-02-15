@@ -1,8 +1,5 @@
 package org.example.Kyu_5;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Connect4 {
 
     int[][] table;
