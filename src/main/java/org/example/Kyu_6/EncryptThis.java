@@ -18,12 +18,6 @@ public class EncryptThis {
             int numberASCII = word.getBytes()[0];
             for (int i = 1; i < word.length(); i ++) {
                 String temp = String.valueOf(word.charAt(i));
-                word.charAt(i) = word.charAt(i + 1);
-
-
-
-
-
 
             }
             result = result + numberASCII + reversedWord + " ";
